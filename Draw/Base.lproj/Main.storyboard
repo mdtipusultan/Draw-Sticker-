@@ -12,7 +12,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Draw" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="MainView">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -31,19 +31,20 @@
                                     <action selector="openDrawingScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N5U-v4-jeF"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nGk-J3-zPO">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nGk-J3-zPO" userLabel="Draw View">
                                 <rect key="frame" x="20" y="158" width="353" height="560"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Pt-cJ-H9d">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dTf-1d-GDi">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="560"/>
-                                    </imageView>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.91103316326530615" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="3Pt-cJ-H9d" firstAttribute="leading" secondItem="nGk-J3-zPO" secondAttribute="leading" id="Oub-Bw-GeG"/>
-                                    <constraint firstAttribute="trailing" secondItem="3Pt-cJ-H9d" secondAttribute="trailing" id="czY-Gm-ew0"/>
-                                    <constraint firstAttribute="bottom" secondItem="3Pt-cJ-H9d" secondAttribute="bottom" id="mpe-b0-3sI"/>
-                                    <constraint firstItem="3Pt-cJ-H9d" firstAttribute="top" secondItem="nGk-J3-zPO" secondAttribute="top" id="ttd-xr-T5P"/>
+                                    <constraint firstAttribute="trailing" secondItem="dTf-1d-GDi" secondAttribute="trailing" id="1QC-ts-0iO"/>
+                                    <constraint firstAttribute="bottom" secondItem="dTf-1d-GDi" secondAttribute="bottom" id="6eC-oy-nYc"/>
+                                    <constraint firstItem="dTf-1d-GDi" firstAttribute="top" secondItem="nGk-J3-zPO" secondAttribute="top" id="brp-iM-WA7"/>
+                                    <constraint firstItem="dTf-1d-GDi" firstAttribute="leading" secondItem="nGk-J3-zPO" secondAttribute="leading" id="p6S-Fx-245"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -60,7 +61,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="drawingImageView" destination="3Pt-cJ-H9d" id="mAl-MQ-iKX"/>
+                        <outlet property="containerView" destination="dTf-1d-GDi" id="xKl-E0-FgL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
