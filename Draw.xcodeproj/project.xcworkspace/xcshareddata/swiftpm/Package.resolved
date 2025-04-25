@@ -1,0 +1,15 @@
+{
+  "originHash" : "c0c37af5e02792885a0afd5c06b4436f6a9e29611fdd6233b25b77e7a2a5f159",
+  "pins" : [
+    {
+      "identity" : "drawsana",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Asana/Drawsana.git",
+      "state" : {
+        "revision" : "8bf7c57ddb7e958315f1c1127cd92ba733cf5b10",
+        "version" : "0.12.0"
+      }
+    }
+  ],
+  "version" : 3
+}
