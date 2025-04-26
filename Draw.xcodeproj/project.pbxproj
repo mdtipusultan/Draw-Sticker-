@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CE0AAFB22DBD1AA2005B2FE8 /* Drawsana in Frameworks */ = {isa = PBXBuildFile; productRef = CE0AAFB12DBD1AA2005B2FE8 /* Drawsana */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		CEC431F72DBACC1000A2363E /* Draw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Draw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0AAFB22DBD1AA2005B2FE8 /* Drawsana in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = Draw;
 			packageProductDependencies = (
+				CE0AAFB12DBD1AA2005B2FE8 /* Drawsana */,
 			);
 			productName = Draw;
 			productReference = CEC431F72DBACC1000A2363E /* Draw.app */;
@@ -108,7 +114,8 @@
 			mainGroup = CEC431EE2DBACC1000A2363E;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				CEC432172DBAD3B700A2363E /* XCRemoteSwiftPackageReference "Pencil-Drawing-UIKit-Demo" */,
+				CE0AAFB02DBD1AA2005B2FE8 /* XCRemoteSwiftPackageReference "Drawsana" */,
+				CE0AAFB32DBD1AAF005B2FE8 /* XCRemoteSwiftPackageReference "Pencil-Drawing-UIKit-Demo" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CEC431F82DBACC1000A2363E /* Products */;
@@ -156,6 +163,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -184,6 +192,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -340,15 +349,31 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CEC432172DBAD3B700A2363E /* XCRemoteSwiftPackageReference "Pencil-Drawing-UIKit-Demo" */ = {
+		CE0AAFB02DBD1AA2005B2FE8 /* XCRemoteSwiftPackageReference "Drawsana" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/stolyarenkoks/Pencil-Drawing-UIKit-Demo.git";
+			repositoryURL = "https://github.com/Asana/Drawsana.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.12.0;
+			};
+		};
+		CE0AAFB32DBD1AAF005B2FE8 /* XCRemoteSwiftPackageReference "Pencil-Drawing-UIKit-Demo" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stolyarenkoks/Pencil-Drawing-UIKit-Demo";
 			requirement = {
 				branch = master;
 				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE0AAFB12DBD1AA2005B2FE8 /* Drawsana */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE0AAFB02DBD1AA2005B2FE8 /* XCRemoteSwiftPackageReference "Drawsana" */;
+			productName = Drawsana;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEC431EF2DBACC1000A2363E /* Project object */;
 }

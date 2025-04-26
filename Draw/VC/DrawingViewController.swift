@@ -47,15 +47,30 @@ class DrawingViewController: UIViewController {
         }
     }
     
+    
     @IBAction func cancelDrawing(_ sender: UIBarButtonItem) {
-        dismiss(animated: true)
+       // dismiss(animated: true)
+        
+        // Navigate back to the previous screen
+           navigationController?.popViewController(animated: true)
     }
     
     @IBAction func saveDrawing(_ sender: UIBarButtonItem) {
-        let scale = UIScreen.main.scale
-        let image = canvasView.drawing.image(from: canvasView.bounds, scale: scale)
-        delegate?.didFinishDrawing(image: image)
-        dismiss(animated: true)
+//        let scale = UIScreen.main.scale
+//        let image = canvasView.drawing.image(from: canvasView.bounds, scale: scale)
+//        delegate?.didFinishDrawing(image: image)
+//        dismiss(animated: true)
+        
+        
+        // Capture the drawing as an image
+           let scale = UIScreen.main.scale
+           let image = canvasView.drawing.image(from: canvasView.bounds, scale: scale)
+           
+           // Notify the delegate with the captured image
+           delegate?.didFinishDrawing(image: image)
+           
+           // Navigate back to the previous screen
+           navigationController?.popViewController(animated: true)
     }
     
     @IBAction func undoActions(_ sender: UIButton) {
