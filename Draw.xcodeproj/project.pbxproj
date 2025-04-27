@@ -6,10 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		CE0AAFB22DBD1AA2005B2FE8 /* Drawsana in Frameworks */ = {isa = PBXBuildFile; productRef = CE0AAFB12DBD1AA2005B2FE8 /* Drawsana */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		CEC431F72DBACC1000A2363E /* Draw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Draw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -40,7 +36,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE0AAFB22DBD1AA2005B2FE8 /* Drawsana in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +78,6 @@
 			);
 			name = Draw;
 			packageProductDependencies = (
-				CE0AAFB12DBD1AA2005B2FE8 /* Drawsana */,
 			);
 			productName = Draw;
 			productReference = CEC431F72DBACC1000A2363E /* Draw.app */;
@@ -114,7 +108,6 @@
 			mainGroup = CEC431EE2DBACC1000A2363E;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				CE0AAFB02DBD1AA2005B2FE8 /* XCRemoteSwiftPackageReference "Drawsana" */,
 				CE0AAFB32DBD1AAF005B2FE8 /* XCRemoteSwiftPackageReference "Pencil-Drawing-UIKit-Demo" */,
 			);
 			preferredProjectObjectVersion = 77;
@@ -155,7 +148,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4NG5UXJYS8;
+				DEVELOPMENT_TEAM = 68W2966MBV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Draw/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -184,7 +177,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4NG5UXJYS8;
+				DEVELOPMENT_TEAM = 68W2966MBV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Draw/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -349,14 +342,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CE0AAFB02DBD1AA2005B2FE8 /* XCRemoteSwiftPackageReference "Drawsana" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Asana/Drawsana.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.12.0;
-			};
-		};
 		CE0AAFB32DBD1AAF005B2FE8 /* XCRemoteSwiftPackageReference "Pencil-Drawing-UIKit-Demo" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/stolyarenkoks/Pencil-Drawing-UIKit-Demo";
@@ -366,14 +351,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		CE0AAFB12DBD1AA2005B2FE8 /* Drawsana */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CE0AAFB02DBD1AA2005B2FE8 /* XCRemoteSwiftPackageReference "Drawsana" */;
-			productName = Drawsana;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEC431EF2DBACC1000A2363E /* Project object */;
 }
